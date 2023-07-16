@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | NTS Mw</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image" href="images/favicon.png">
+    <script src="https://kit.fontawesome.com/095ec8513b.js" crossorigin="anonymous"></script>
+    <style>
+        .top-nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .right-section a {
+            justify-content: space-between;
+            padding-left: 10px;
+        }
+        
+        .left-section,
+        .right-section {
+            display: flex;
+            align-items: center;
+        }
+        
+        .hamburger-menu {
+            display: none;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .right-section {
+                display: none;
+            }
+            .hamburger-menu {
+                display: block;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/095ec8513b.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.hamburger-menu').click(function() {
+                $('.right-section').slideToggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="top-nav-bar">
+        <div class="left-section">
+            <img src="company-logo.png" alt="Company Name">
+        </div>
+        <div class="right-section">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+        </div>
+        <div class="hamburger-menu">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

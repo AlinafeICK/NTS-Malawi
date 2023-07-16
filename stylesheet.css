@@ -1,0 +1,347 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Create a responsive navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar span {
+    color: #DA0037;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+
+/* Use media queries to make the navbar responsive */
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar a {
+        margin: 10px 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+
+/*******************************Section Content*****************************/
+
+
+/*Background for hero section*/
+
+.hero-section {
+    background-color: #fff;
+    background-image: url(images/backgrounds/bg_image_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+}
+
+.hero-section section {
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;
+    font-size: larger;
+}
+
+.hero-section a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-section p {
+    color: #fff;
+}
+
+.hero-section button {
+    background-color: inherit;
+    color: #fff;
+    border-radius: 10px;
+    border-color: #fff;
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* Add some basic styling to the main content area */
+
+.content {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px 40px;
+    text-align: justify;
+    justify-content: center;
+    box-shadow: 5px 15px 5px lightgrey;
+}
+
+.content h2,
+h3,
+h4 {
+    color: #DA0037;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-box {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 5px 10px 5px lightgrey;
+}
+
+
+/* Make the main content area responsive */
+
+@media (max-width: 800px) {
+    .content {
+        padding: 10px;
+    }
+}
+
+
+/*Services section on Home page*/
+
+.services-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+    box-shadow: 5px 10px 5px lightgray;
+}
+
+.services-section h2,
+h3 {
+    color: #DA0037;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-container a {
+    text-decoration: none;
+    box-shadow: 5px 15px 5px lightgray;
+}
+
+.services-container a,
+p {
+    color: black;
+}
+
+.services-container a:hover {
+    background-color: lavender;
+}
+
+.service {
+    width: 300px;
+    margin: 30px;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.service:hover img {
+    opacity: 0.7;
+}
+
+
+/*team section*/
+
+.team-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.team-section h2 {
+    color: #DA0037;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    flex: 1;
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    margin-bottom: 10px;
+}
+
+
+/* Style the footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+
+/* Style the footer links */
+
+footer a {
+    color: white;
+}
+
+
+/* Style the footer rows */
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Style the footer social media icons */
+
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+footer .logo a {
+    text-decoration: none;
+}
+
+footer .logo span {
+    color: #DA0037;
+}
+
+footer .low-footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    footer .column {
+        flex: 100%;
+    }
+}
+
+
+/*Services Page*/
+
+.image-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-container {
+    flex: 1;
+    order: 1;
+}
+
+.text-container {
+    flex: 1;
+    order: 2;
+    padding-left: 20px;
+}
+
+
+/* Media queries for mobile view */
+
+@media (max-width: 768px) {
+    .image-text-container {
+        flex-direction: column;
+    }
+    .image-container {
+        order: 1;
+        text-align: center;
+    }
+    .text-container {
+        order: 2;
+        padding: 0;
+    }
+}
+
+
+/*About Us Page*/
+
+.about-us-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.executive-team-container {
+    display: flex;
+    justify-content: center;
+}
+
+.executive-team-member {
+    width: 30%;
+    text-align: center;
+    margin: 30px;
+}
+
+.executive-team-member img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.google
